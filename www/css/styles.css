@@ -1,0 +1,142 @@
+﻿@font-face {
+    font-family: 'din';
+    src: local('$'), local('$'),
+	url('../fonts/DINPro-Black.woff') format('woff'), 
+	url('../fonts/DINPro-Black.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'din_bold';
+    src: local('$'), local('$'),
+	url('../fonts/DINPro-Bold.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+	font-family: 'din', sans-serif;
+	line-height: 1.1;
+}
+
+#top-line {
+	height: 12px;
+	background-color: #00608F;
+}
+#front-header {
+	height: 1216px;
+	position: relative;
+	background: url('../images/front-header-bg.jpg') no-repeat center top;
+}
+	#front-header .container {
+		position: relative;
+	}
+	#front-header .title {
+		text-align: center;
+		font-size: 30px;
+		color: #FFFFFF;
+		padding-top: 20px;
+	}
+	#front-header .phones {
+		padding-top: 4px;
+		text-align: right;
+	}
+		#front-header .phones > a {
+			display: block;
+			color: #A4EBFF;
+			font-size: 26px;
+			margin-bottom: 3px;
+			font-family: 'din_bold', 'din', sans-serif;
+		}
+		#front-header .phones > a.callback {
+			font-family: 'din', sans-serif;
+			font-size: 18px;
+			color: #FFFFFF;
+			text-transform: uppercase;
+			background: linear-gradient(to top, #FF6E00, #FFC700);
+			display: inline-block;
+			border-radius: 100px;
+			padding: 10px 14px 10px 35px;
+			margin-top: 4px;
+			position: relative;
+			transition: background 0.3s;
+		}
+			#front-header .phones > a.callback:hover {
+				background: linear-gradient(to bottom, #FF6E00, #FFC700);
+			}
+			#front-header .phones > a.callback:before{
+				content: '';
+				position: absolute;
+				width: 17px;
+				height: 25px;
+				left: 13px;
+				top: 8px;
+				background: url('../images/callback-bg.png') no-repeat 0 0
+			}
+	nav {
+		background: #00608E;
+		height: 50px;
+		border-radius: 18px;
+		margin-top: 10px;
+		position: relative;
+	}
+		nav .logo {
+			position: absolute;
+			display: block;
+			width: 203px;
+			height: 173px;
+			left: -15px;
+			top: -63px;
+			background: url('../images/logo.png') no-repeat 0 0;
+		}
+		nav ul {
+			padding: 5px 0 5px 250px;
+		}
+			nav ul li {
+				display: inline-block;
+				margin-right: 10%;
+				height: 40px;
+				border: 3px solid transparent;
+				border-radius: 20px;
+				transition: border 0.3s, box-shadow 0.3s;
+			}
+			nav ul li:last-child {
+				margin-right: 0;
+			}
+			nav ul li.active, nav ul li:hover {
+				border: 3px solid #A4EBFF;
+				box-shadow: 0 0 0 1px #71CDE8, inset 0 0 0 1px #71CDE8;
+			}
+				nav ul li a {
+					font-family: 'din_bold', 'din', sans-serif;
+					color: #FFFFFF;
+					font-size: 21.5px;
+					line-height: 28px;
+					padding: 0 20px;
+				}
+	.perks {
+		position: absolute;
+		width: 100%;
+		height: 563px;
+		bottom: 0;
+		left: 0;
+		background: url('../images/perks-bg.png') no-repeat center bottom;
+		z-index: 2;
+	}
+	.utp {
+		color: #00608E;
+		font-size: 45px;
+		text-align: center;
+		padding-top: 24px;
+		line-height: 1;
+	}
+	.get-a-gift {
+		position: absolute;
+		right: 0;
+		top: 450px;
+		width: 300px;
+		min-height: 300px;
+		background: #006C91;
+		box-shadow: 0 2px 3px 2px rgba(0,110,153,0.5);
+		z-index: 3;
+	}
