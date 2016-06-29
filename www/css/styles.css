@@ -7,6 +7,22 @@
     font-style: normal;
 }
 @font-face {
+    font-family: 'din_reg';
+    src: local('$'), local('$'),
+	url('../fonts/DINPro-Regular.woff') format('woff'), 
+	url('../fonts/DINPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'din_medium';
+    src: local('$'), local('$'),
+	url('../fonts/DINPro-Medium.woff') format('woff'), 
+	url('../fonts/DINPro-Medium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
     font-family: 'din_bold';
     src: local('$'), local('$'),
 	url('../fonts/DINPro-Bold.ttf') format('truetype');
@@ -17,6 +33,24 @@
 body {
 	font-family: 'din', sans-serif;
 	line-height: 1.1;
+	color: #FFFFFF;
+}
+::-webkit-input-placeholder {
+	color: #4F4F4F !important;
+}
+:-moz-placeholder {
+	color: #4F4F4F !important;
+	opacity: 1;
+}
+::-moz-placeholder {
+	color: #4F4F4F !important;
+	opacity: 1;
+}
+:-ms-input-placeholder {
+	color: #4F4F4F !important;
+}
+:placeholder-shown {
+	color: #7B7472 !important;
 }
 
 #top-line {
@@ -114,15 +148,6 @@ body {
 					line-height: 28px;
 					padding: 0 20px;
 				}
-	.perks {
-		position: absolute;
-		width: 100%;
-		height: 563px;
-		bottom: 0;
-		left: 0;
-		background: url('../images/perks-bg.png') no-repeat center bottom;
-		z-index: 2;
-	}
 	.utp {
 		color: #00608E;
 		font-size: 45px;
@@ -139,4 +164,260 @@ body {
 		background: #006C91;
 		box-shadow: 0 2px 3px 2px rgba(0,110,153,0.5);
 		z-index: 3;
+		padding: 20px 25px;
+		text-align: center;
 	}
+		.get-a-gift h3 {
+			font-size: 26px;
+			color: #FFBF00;
+			margin-bottom: 14px;
+		}
+		.get-a-gift p {
+			font-size: 20px;
+			font-family: 'din_medium', 'din', sans-serif;
+			line-height: 1.2;
+		}
+		.get-a-gift p span {
+			color: #FFBF00;
+			font-family: 'din', sans-serif;
+		}
+		.get-a-gift form {
+			padding-top: 25px;
+		}
+		.get-a-gift input {
+			width: 95%;
+			height: 35px;
+			border-radius: 20px;
+			padding: 0 10px;
+			margin-bottom: 21px;
+		}
+		.get-a-gift input[type="phone"],
+		.get-a-gift input[type="text"] {
+			color: #4F4F4F;
+			font-family: 'din_reg', 'din', sans-serif;
+			font-size: 18px;
+		}
+		.get-a-gift input[type="submit"] {
+			height: 60px;
+			margin-bottom: 0;
+			padding: 0;
+			background: linear-gradient(to top, #FF7108, #F8C605);
+			transition: background;
+			font-size: 24px;
+		}
+			.get-a-gift input[type="submit"]:hover  {
+				background: linear-gradient(to bottom, #FF7108, #F8C605);
+			}
+			.figure {
+				position: relative;
+				overflow: hidden;
+			}
+				.figure .top, .figure .bottom {
+					position: absolute;
+					width: 100%;
+					height: 0;
+					left: 0;
+				}
+				.figure .top {
+					top: 0;
+				}
+				.figure .bottom {
+					bottom: 0;
+				}
+				.figure .top:before, .figure .bottom:before,
+				.figure .top:after, .figure .bottom:after {
+					content: '';
+					z-index: 3;
+					position: absolute;
+					width: 20px;
+					height: 60px;
+					background: #006C91;
+				}
+				.figure .top:before {
+					left: 0;
+					top: -24px;
+					transform: rotate(27deg);
+				}
+				.figure .bottom:before {
+					left: 0;
+					bottom: -24px;
+					transform: rotate(-27deg);
+				}
+				.figure .top:after {
+					right: 0;
+					top: -24px;
+					transform: rotate(-27deg);
+				}
+				.figure .bottom:after {
+					right: 0;
+					bottom: -24px;
+					transform: rotate(27deg);
+				}
+				
+	.perks {
+		position: absolute;
+		width: 100%;
+		height: 563px;
+		bottom: 0;
+		left: 0;
+		background: url('../images/perks-bg.png') no-repeat center bottom;
+		z-index: 2;
+		padding-top: 217px;
+	}
+		.perks .row > div {
+			text-align: center;
+		}
+		.perks .ico {
+			width: 183px;
+			height: 180px;
+			margin: 0 auto 20px;
+			background-repeat: no-repeat;
+			background-position: center top;
+		}
+			.perks .row > div:nth-child(1) .ico {
+				background-image: url('../images/perk-1.png');
+			}
+			.perks .row > div:nth-child(2) .ico {
+				background-image: url('../images/perk-2.png');
+			}
+			.perks .row > div:nth-child(3) .ico {
+				background-image: url('../images/perk-3.png');
+			}
+			.perks .row > div:nth-child(4) .ico {
+				background-image: url('../images/perk-4.png');
+			}
+		.perks p {
+			color: #00608B;
+			font-family: 'din_medium', 'din', sans-serif;
+			font-size: 20px;
+		}
+		
+.choose-top {
+	background: url('../images/choose-top.png') no-repeat center 0;
+	height: 126px;
+	margin-top: -72px;
+	margin-bottom: 19px;
+}
+.palki h2 {
+	font-size: 47px;
+	text-align: center;
+	color: #00608B;
+	line-height: 0.9;
+	margin-bottom: 40px;
+}
+.palki-item {
+	min-height: 540px;
+	position: relative;
+	color: #00608B;
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-top: 35px;
+	margin-bottom: 50px;
+}
+.palki-1 {
+	background-image: url('../images/palki-1.png');
+}
+.palki-2 {
+	background-image: url('../images/palki-2.png');
+}
+.palki-3 {
+	background-image: url('../images/palki-3.png');
+}
+.palki-4 {
+	background-image: url('../images/palki-4.png');
+}
+	.palki-item .sticker {
+		position: absolute;
+		top: 30px;
+		right: 20px;
+		width: 136px;
+		height: 137px;
+		background: url('../images/sticker.png') no-repeat 0 0;
+	}
+	.palki-item .name {
+		font-size: 30px;
+		margin-bottom: 6px;
+	}
+	.palki-item .price {
+		font-size: 36px;
+		font-family: 'din_medium', 'din', sans-serif;
+		margin-bottom: 135px;
+	}
+	.palki-item .name2 {
+		text-align: right;
+		font-size: 18px;
+		margin-bottom: 12px;
+	}
+		.palki-item .name2 h3 {
+			font-size: 25px;
+			margin-bottom: 6px;
+		}
+	.palki-item .description {
+		text-align: right;
+		font-size: 20px;
+		font-family: 'din_medium', 'din', sans-serif;
+		padding-left: 50%;
+		margin-bottom: 15px;
+	}
+	.palki-item .buttons {
+		text-align: right;
+	}
+	.palki-item .about{
+		width: 130px;
+		display: inline-block;
+		margin: 0 10px 25px 0;
+	}
+		.palki-item .about .top:before,
+		.palki-item .about .bottom:before {
+			left: -13px;
+			background-color: #FFFFFF;
+		}
+		.palki-item .about .top:after,
+		.palki-item .about .bottom:after {
+			right: -13px;
+			background-color: #FFFFFF;
+		}
+		.palki-item .about a {
+			height: 40px;
+			display: block;
+			background: linear-gradient(to top, #004B93, #1B87B8);
+			color: #FFFFFF;
+			text-align: center;
+			font-size: 19px;
+			font-family: 'din_medium', 'din', sans-serif;
+			line-height: 38px;
+			transition: background 0.3s;
+		}
+			.palki-item .about a:hover {
+				background: linear-gradient(to bottom, #004B93, #1B87B8);
+			}
+	.oneclick {
+		display: inline-block;
+		width: 250px;
+	}
+	.palki-item .oneclick {
+		margin-right: 30px;
+	}
+		.oneclick .top:before,
+		.oneclick .bottom:before {
+			left: -5px;
+			background-color: #FFFFFF;
+		}
+		.oneclick .top:after,
+		.oneclick .bottom:after {
+			right: -5px;
+			background-color: #FFFFFF;
+		}
+		.oneclick a {
+			display: block;
+			height: 75px;
+			background: linear-gradient(to top, #F26D0E, #F8C605);
+			font-size: 20px;
+			color: #FFFFFF;
+			text-align: center;
+			line-height: 73px;
+			transition: background 0.3s;
+		}
+			.oneclick a:hover {
+				background: linear-gradient(to bottom, #F26D0E, #F8C605);
+			}
