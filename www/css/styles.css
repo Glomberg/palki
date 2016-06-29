@@ -298,7 +298,10 @@ body {
 	margin-top: -72px;
 	margin-bottom: 19px;
 }
-.palki h2 {
+.palki {
+	margin-bottom: 20px;
+}
+.palki h2, .size h2 {
 	font-size: 47px;
 	text-align: center;
 	color: #00608B;
@@ -421,3 +424,56 @@ body {
 			.oneclick a:hover {
 				background: linear-gradient(to bottom, #F26D0E, #F8C605);
 			}
+			
+.size {
+	background: #E6F3FF;
+	border-top: 9px solid #4EABC7;
+	position: relative;
+	min-height: 300px;
+	padding-top: 83px;
+}
+	.size:before {
+		content: '';
+		position: absolute;
+		width: 213px;
+		height: 136px;
+		top: -77px;
+		left: calc(50% - 106px);
+		background: url('../images/size-top.png') no-repeat 0 0;
+	}
+	#slider {
+		position: relative;
+		width: 90%;
+		margin: 0 auto;
+		height: 5px;
+		background: url('../images/slider-line.png') repeat-x 0 0;
+	}
+		#slider .minus, #slider .plus {
+			position: absolute;
+			width: 50px;
+			height: 40px;
+			box-shadow: 2px 2px 0 0 #FF5E00;
+			background: linear-gradient(to top, #FF6B00, #FFCC00);
+			top: -18px;
+			font-size: 47px;
+			color: #FFFFFF;
+			line-height: 38px;
+			text-align: center;
+			cursor: pointer;
+		}
+		#slider .minus {
+			left: -50px;
+		}
+		#slider .plus {
+			right: -50px;
+		}
+		#slider .ui-slider-handle {
+			width: 85px;
+			height: 55px;
+			background: linear-gradient(to top, #FF6C00, #FFCC00);
+			top: -24px;
+			margin-left: -43px;
+			box-shadow: 2px 2px 0 0 #FF5E00;
+			border-radius: 0;
+			border: none !important;
+		}
