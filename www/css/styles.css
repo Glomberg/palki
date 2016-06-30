@@ -505,7 +505,7 @@ body {
 	border-top: 10px solid #16729C;
 	min-height: 300px;
 	position: relative;
-	padding-top: 66px;
+	padding: 66px 0 78px;
 }
 	.otzivi:before {
 		content: '';
@@ -519,10 +519,26 @@ body {
 	.otzivi h2 {
 		font-size: 47px;
 		text-align: center;
-		margin-bottom: 84px;
+		margin-bottom: 33px;
 	}
 	.otziv-prev, .otziv-next {
-		
+		width: 65px;
+		height: 35px;
+		margin: 0 auto;
+		background-image: url('../images/otzivi-controls.png');
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+		.otziv-prev {
+			background-position: center top;
+			margin-bottom: 17px;
+		}
+		.otziv-next {
+			background-position: center bottom;
+			margin-top: 17px;
+		}
+	.otziv {
+		margin-bottom: 20px;
 	}
 	.otziv .photo {
 		width: 175px;
@@ -536,23 +552,56 @@ body {
 		background-position: center center;
 		background-image: url('../images/otsiv-0.jpg');
 		float: left;
-		margin-right: 50px;
+		margin: 0 50px;
 	}
 	.otzivi .text {
 		font-size: 22px;
+		padding-top: 27px;
 	}
 	.otzivi .text span {
 		display: block;
 	}
 	.otzivi .text p {
 		font-family: 'din_medium', 'din', sans-serif;
+		margin-bottom: 20px;
 	}
 	.otziv .readmore {
 		width: 165px;
 		height: 30px;
 		float: right;
 		position: relative;
+		margin: 0 50px;
+		overflow: hidden;
 	}
+		.readmore .top:before, .readmore .bottom:before,
+		.readmore .top:after, .readmore .bottom:after {
+			content: '';
+			width: 10px;
+			height: 30px;
+			position: absolute;
+			background: #00608B;
+		}
+			.readmore .top:before {
+				transform: rotate(27deg);
+				top: -50%;
+				left: -2px;
+			}
+			.readmore .bottom:before {
+				transform: rotate(-27deg);
+				bottom: -50%;
+				left: -2px;
+			}
+			.readmore .top:after {
+				transform: rotate(-27deg);
+				top: -50%;
+				right: -2px;
+			}
+			.readmore .bottom:after {
+				transform: rotate(27deg);
+				bottom: -50%;
+				right: -2px;
+			}
+		
 	.otziv .readmore a {
 		font-size: 16px;
 		font-family: 'din_medium', 'din', sans-serif;
@@ -562,4 +611,209 @@ body {
 		height: 30px;
 		line-height: 28px;
 		text-align: center;
+	}
+	
+		.otziv:nth-child(even) .photo {
+			float: right;
+		}
+		.otziv:nth-child(even) .readmore {
+			float: left;
+		}
+		.otziv:nth-child(even) .text {
+			text-align: right;
+		}
+		
+	.otziv-add {
+		position: relative;
+		width: 400px;
+		height: 76px;
+		margin: 34px auto;
+		overflow: hidden;
+	}
+	.otziv-add  a {
+		height: 76px;
+		display: block;
+		text-align: center;
+		color: #00608B;
+		background: #FFFFFF;
+		font-size: 23px;
+		line-height: 74px;
+		font-family: 'din_medium', 'din', sans-serif;
+	}
+		.otziv-add .top:before, .otziv-add .bottom:before,
+		.otziv-add .top:after, .otziv-add .bottom:after {
+			content: '';
+			width: 30px;
+			height: 90px;
+			position: absolute;
+			background: #00608B;
+		}
+			.otziv-add .top:before {
+				transform: rotate(27deg);
+				top: -50%;
+				left: -8px;
+			}
+			.otziv-add .bottom:before {
+				transform: rotate(-27deg);
+				bottom: -50%;
+				left: -8px;
+			}
+			.otziv-add .top:after {
+				transform: rotate(-27deg);
+				top: -50%;
+				right: -8px;
+			}
+			.otziv-add .bottom:after {
+				transform: rotate(27deg);
+				bottom: -50%;
+				right: -8px;
+			}
+			
+.questions {
+	background: #E6F3FF;
+	border-top: 9px solid #4EABC7;
+	position: relative;
+	min-height: 300px;
+	padding-top: 105px;
+	padding-bottom: 54px;
+}
+	.questions:before {
+		content: '';
+		position: absolute;
+		width: 213px;
+		height: 136px;
+		top: -77px;
+		left: calc(50% - 106px);
+		background: url('../images/questions-top.png') no-repeat 0 0;
+	}
+	.questions .row>div:first-child {
+		padding-top: 52px;
+	}
+	.questions .row>div:last-child {
+		text-align: center;
+	}
+	.questions h2 {
+		color: #00608E;
+		font-size: 36px;
+		margin-bottom: 6px;
+	}
+	.questions span{
+		color: #00608E;
+		font-size: 27px;
+		font-family: 'din_medium', 'din', sans-serif;
+		display: inline-block;
+		margin-bottom: 46px;
+	}
+	.questions input {
+		width: 245px;
+		height: 36px;
+		display: block;
+		margin: 0 auto 30px;
+		padding: 0 20px;
+		color: #8A8A8A;
+		font-size: 20px;
+		font-family: 'din_medium', 'din', sans-serif;
+	}
+	.questions input[type="phone"] {
+		margin-bottom: 40px;
+	}
+	.questions input[type="submit"] {
+		height: 78px;
+		font-family: 'din', sans-serif;
+		color: #FFFFFF;
+		font-size: 24px;
+		background: linear-gradient(to top, #FF6C00, #FFC700);
+		margin-bottom: 0;
+		text-transform: uppercase;
+	}
+		.questions input[type="submit"]:hover {
+			background: linear-gradient(to bottom, #FF6C00, #FFC700);
+		}
+	.questions .figure {
+		width: 245px;
+		margin: 0 auto 30px;
+	}
+	.questions .top:before, .questions .bottom:before {
+		background-color: #E8F2FF;
+		left: -5px;
+	}
+	.questions .top:before {
+		top: -23px;
+	}
+	.questions .bottom:before {
+		bottom: -23px;
+	}
+	.questions .top:after, .questions .bottom:after {
+		background-color: #E8F2FF;
+		right: -5px;
+	}
+	.questions .top:after {
+		top: -23px;
+	}
+	.questions .bottom:after {
+		bottom: -23px;
+	}
+	
+footer {
+	min-height: 100px;
+	background: #00608E;
+	position: relative;
+	font-family: 'din_medium', 'din', sans-serif;
+}
+	footer:before {
+		content: '';
+		position: absolute;
+		height: 118px;
+		background: url('../images/footer-top.png') no-repeat center top;
+		background-size: cover;
+		width: 100%;
+		left: 0;
+		top: -118px;
+	}
+	footer .container {
+		top: -45px;
+		position: relative;
+	}
+	footer a {
+		color: #FFFFFF;
+	}
+	footer .footer-phones {
+		text-align: center;
+		margin-bottom: 25px;
+	}
+		footer .footer-phones a {
+			display: inline-block;
+			padding: 0 24px 0 37px;
+			height: 29px;
+			line-height: 28px;
+			background: url('../images/footer-phones-ico.png') no-repeat left center;
+			font-size: 22px;
+			font-family: 'din_medium', 'din', sans-serif;
+		}
+	footer .footer-links {
+		
+	}
+		footer .footer-links a {
+			display: block;
+			font-size: 21px;
+			text-decoration: underline;
+			padding-left: 43px;
+			height: 35px;
+			line-height: 45px;
+			margin-bottom: 10px;
+		}
+			footer .footer-links a:first-child {
+				background: url('../images/footer-links-ico-1.png') no-repeat 5px bottom;
+			}
+			footer .footer-links a:last-child {
+				background: url('../images/footer-links-ico-2.png') no-repeat left bottom;
+			}
+	footer .footer-info {
+		font-size: 13px;
+	}
+		footer .footer-info p {
+			margin-bottom: 20px;
+		}
+	footer .footer-card {
+		padding-top: 29px;
 	}
