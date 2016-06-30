@@ -431,6 +431,7 @@ body {
 	position: relative;
 	min-height: 300px;
 	padding-top: 83px;
+	padding-bottom: 95px;
 }
 	.size:before {
 		content: '';
@@ -441,12 +442,32 @@ body {
 		left: calc(50% - 106px);
 		background: url('../images/size-top.png') no-repeat 0 0;
 	}
+	.size h2 {
+		margin-bottom: 77px;
+	}
+	.begunok {
+		color: #00608B;
+		font-size: 24px;
+		font-family: 'din_medium', 'din', sans-serif;
+		text-align: center;
+		padding-top: 38px;
+	}
+		.begunok span {
+			margin-bottom: 20px;
+			display: inline-block;
+		}
+	.begunok-area {
+		padding: 47px 0;
+	}
 	#slider {
 		position: relative;
 		width: 90%;
 		margin: 0 auto;
 		height: 5px;
-		background: url('../images/slider-line.png') repeat-x 0 0;
+		background: #00608B;
+		border: none;
+		border-radius: 0;
+		border-bottom: 2px solid #0080BA;
 	}
 		#slider .minus, #slider .plus {
 			position: absolute;
@@ -471,9 +492,74 @@ body {
 			width: 85px;
 			height: 55px;
 			background: linear-gradient(to top, #FF6C00, #FFCC00);
-			top: -24px;
+			top: -26px;
 			margin-left: -43px;
 			box-shadow: 2px 2px 0 0 #FF5E00;
 			border-radius: 0;
 			border: none !important;
 		}
+		
+		
+.otzivi {
+	background: #00608B;
+	border-top: 10px solid #16729C;
+	min-height: 300px;
+	position: relative;
+	padding-top: 66px;
+}
+	.otzivi:before {
+		content: '';
+		position: absolute;
+		width: 211px;
+		height: 122px;
+		top: -77px;
+		left: calc(50% - 106px);
+		background: url('../images/otzivi-top.png') no-repeat 0 0;
+	}
+	.otzivi h2 {
+		font-size: 47px;
+		text-align: center;
+		margin-bottom: 84px;
+	}
+	.otziv-prev, .otziv-next {
+		
+	}
+	.otziv .photo {
+		width: 175px;
+		height: 175px;
+		border-radius: 100px;
+		border: 8px solid #FFFFFF;
+		box-shadow: 0 5px 10px 0 rgba(0,86,125,0.75);
+		overflow: hidden;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-image: url('../images/otsiv-0.jpg');
+		float: left;
+		margin-right: 50px;
+	}
+	.otzivi .text {
+		font-size: 22px;
+	}
+	.otzivi .text span {
+		display: block;
+	}
+	.otzivi .text p {
+		font-family: 'din_medium', 'din', sans-serif;
+	}
+	.otziv .readmore {
+		width: 165px;
+		height: 30px;
+		float: right;
+		position: relative;
+	}
+	.otziv .readmore a {
+		font-size: 16px;
+		font-family: 'din_medium', 'din', sans-serif;
+		background: #FFFFFF;
+		color: #00608B;
+		display: block;
+		height: 30px;
+		line-height: 28px;
+		text-align: center;
+	}
