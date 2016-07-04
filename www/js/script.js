@@ -3,7 +3,7 @@ $(document).ready(function(){
 		e.preventDefault();
 		href = $(this).attr("href");
 		if($(href).length != 0) {
-			$("body,html").stop().animate({ scrollTop: $(href).offset().top - 110}, 1000);
+			$("body,html").stop().animate({ scrollTop: $(href).offset().top - 10}, 1000);
 		}
 	});
 	//ползунок

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/css-reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid-3.3.1.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<link rel="stylesheet" type="text/css" href="css/media.css" />
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/script.js"></script>
+	<!--[if lt IE 9]>
+	   <script>
+		  document.createElement('header');
+		  document.createElement('nav');
+		  document.createElement('section');
+		  document.createElement('article');
+		  document.createElement('aside');
+		  document.createElement('footer');
+	   </script>
+	<![endif]-->
+</head>
+<body>
+<div id="top-line"></div>
+<header id="inner-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-3 col-md-3"><a href="#" class="logo"></a></div>
+			<div class="col-xs-12 col-sm-6 col-md-6 title">
+				<h1>Палки для скандинавской <br>
+				ходьбы и аксессуары</h1>
+				<a href="#" class="back">← Вернуться обратно</a>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3 phones">
+				<a href="tel:+74953747186">8 (495) 374-71-86</a>
+				<a href="tel:+78006432047">8 (800) 643-20-47</a>
+				<a href="#callback" class="callback">Заказать звонок</a>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="content">
+	<div class="container online">
+		<div class="row">
+			<div class="col-xs-12">
+				<h2>Онлайн оплата Вашего заказа:</h2>
+				<form name=ShopForm method="POST" action="https://money.yandex.ru/eshop.xml">
+					<input type="hidden" name="scid" value="35277">
+					<input type="hidden" name="ShopID" value="101863">
+					
+					<div class="online-line">
+						<label for="zakaz-n">Номер заказа*<br><a href="#">(Оформить заказ)</a></label>
+						<input id="zakaz-n" type=text name="CustomerNumber" size="43" required>
+					</div>
+					
+					<div class="online-line">
+						<label for="zakaz-s">Стоимость заказа*</label>
+						<input id="zakaz-s" type=text name="Sum" size="43" required>
+					</div>
+					
+					<div class="online-line">
+						<label>Способ оплаты:</label>
+					</div>
+					
+					<div class="online-line">
+						<input id="PC" name="paymentType" value="PC" type="radio" checked="checked"/>
+						<label for="PC">Со счета в Яндекс.Деньгах</label>
+					</div>
+					
+					<div class="online-line">
+						<input id="AC"  name="paymentType" value="AC" type="radio" />
+						<label for="AC">С банковской карты</label>
+					</div>
+					
+					<div class="online-line">
+						<input id="WM" name="paymentType" value="WM" type="radio" />
+						<label for="WM">Со счета WebMoney</label>
+					</div>
+					
+					<div class="online-line">
+						<input id="GP" name="paymentType" value="GP" type="radio" />
+						<label for="GP">По коду через терминал</label>
+					</div>
+					
+					<div class="online-line online-submit">
+						<div class="figure">
+							<div class="top"></div>
+							<input value="Оплатить" type="submit">
+							<div class="bottom"></div>
+						</div>
+					</div>
+					
+					<div class="online-line">
+						<span style="width: 100%;">* Поля, помеченные звездочкой, обязательны для заполнения.</span>
+					</div>
+					
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 footer-phones">
+				<a href="tel:+74956603548">8 (495) 660-35-48</a>
+				<a href="tel:+78124072948">8 (812) 407-29-48</a>
+				<a href="tel:+78007757948">8 (800) 775-79-48</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-5 col-md-3 footer-links">
+				<a href="#" class="opt">Для оптовых заказов</a>
+				<a href="mailto:skandi-palki@mail.ru" class="mail">Skandi-palki@mail.ru</a>
+			</div>
+			<div class="col-xs-12 col-sm-7 col-md-6 footer-info">
+				<p>Вся информация, представленная на сайте, носит ознакомительный характер
+				и не является основание для методики самолечения.</p>
+				<p>«© 2016 "Skandi-palki.ru" Все права защищены Общество с ограниченной 
+				ответственностью «Вирбо». Свидетельство о государственной регистрации 
+				№ 1147746261992».</p>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-3 footer-card">
+				<a href="#"><img src="images/card.png" alt="" /></a>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>

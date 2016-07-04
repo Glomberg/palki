@@ -2,22 +2,316 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-	
+	nav ul {
+		padding-left: 200px;
+	}
+	nav ul li {
+		margin-right: 5%;
+	}
+	.utp {
+		font-size: 40px;
+	}
+	#inner-header .phones > a:not(.callback) {
+		font-size: 22px;
+	}
+	#inner-header .phones > a.callback {
+		font-size: 18px;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px) {
-	
+	#front-header .title {
+		padding-top: 0;
+		font-size: 26px;
+	}
+	.phones > a.callback {
+		font-size: 16px;
+	}
+	nav ul {
+		padding-left: 180px;
+	}
+	nav ul li {
+		margin-right: 0;
+	}
+	nav ul li a {
+		padding: 0 12px;
+	}
+	.perks p {
+		font-size: 16px;
+	}
+	.questions {
+		padding-top: 10px;
+		padding-bottom: 100px;
+	}
+		.questions img {
+			display: block;
+			margin: 0 auto;
+		}
+	footer .footer-links a {
+		font-size: 18px;
+	}
+	footer .footer-card {
+		text-align: center;
+	}
+	#inner-header {
+		padding: 14px 0 35px;
+	}
+	#inner-header .logo {
+		max-width: 100%;
+		background-size: contain;
+	}
+	#inner-header .phones > a:not(.callback) {
+		font-size: 18px;
+	}
+	#inner-header .phones > a.callback {
+		font-size: 12px;
+	}
+		#inner-header .phones > a.callback::before {
+			top: 6px;
+		}
+	.content {
+		padding-top: 70px;
+	}
+	.tovar-image, .tovar-image img {
+		max-width: 100%;
+	}
+	.tovar .name h2 {
+		text-align: left;
+	}
+	.tovar .vibor span.hint {
+		display: block;
+	}
+	.tovar .references, .tovar .complete-set, .tovar .description p {
+		font-size: 18px;
+	}
+	.tovar .references li {
+		width: 100%;
+	}
+	.tovar .complete-set h4 {
+		font-size: 20px;
+	}
+	.tovar .vibor, .tovar .description strong {
+		font-size: 20px;
+	}
+	.vibor > div > span:first-child {
+		width: 180px;
+	}
+	.accessories > .row:first-child div {
+		font-size: 18px;
+	}
+	.accessories .image {
+		background-size: contain;
+	}
+	.zakaz h2 {
+		margin-bottom: 30px;
+	}
+	.zakaz {
+		font-size: 20px;
+	}
+	.zakaz .title-line {
+		font-size: 18px;
+		height: 30px;
+	}
+	.zakaz .line {
+		height: 45px;
+	}
+	.bonus {
+		margin-bottom: 25px;
+	}
+	.zakaz form input {
+		margin-bottom: 10px;
+	}
+	.zakaz .sposob {
+		width: 49%;
+	}
+	.phones .mail {
+		font-size: 13px !important;
+	}
+	.opt-content h2 {
+		font-size: 32px;
+	}
+	.online {
+		margin-top: 0;
+	}
+	.online h2 {
+		font-size: 32px;
+		margin-bottom: 30px;
+	}
+	.online form {
+		font-size: 20px;
+	}
+	.online-line input[type="radio"] + label {
+		width: 100%;
+		padding-right: 0;
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-	
+	#front-header .title {
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+	.phones {
+		text-align: center;
+	}
+		.phones > a {
+			font-size: 22px;
+		}
+	nav {
+		height: auto;
+		margin-top: 90px;
+	}
+		nav .logo {
+			width: 130px;
+			height: 94px;
+			top: -92px;
+			left: calc(50% - 65px);
+		}
+		nav ul {
+			padding-left: 0;
+			text-align: center;
+		}
+	.utp {
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+	.get-a-gift {
+		top: auto;
+		right: auto;
+		position: relative;
+	}
+	.perks {
+		padding-top: 195px;
+	}
+	.perks .ico {
+		height: 100px;
+		margin-bottom: 4px;
+	}
+	.perks p {
+		font-size: 14px;
+	}
+	.palki h2, .size h2, .otzivi h2, .questions h2, .accessories h2, .zakaz h2, .opt-content h2 {
+		font-size: 24px;
+	}
+	.size img {
+		max-width: 100%;
+	}
+	.otziv:nth-child(2n) .text {
+		text-align: left;
+	}
+	.otziv .readmore {
+		float: none !important;
+		margin: 0 auto !important;
+	}
+	.otziv-add {
+		width: 300px;
+	}
+	.questions img {
+		max-width: 100%;
+	}
+	footer .footer-links, footer .footer-info {
+		text-align: center;
+	}
+	footer .footer-links {
+		margin-bottom: 20px;
+	}
+	#inner-header {
+		padding-bottom: 70px;
+	}
+	#inner-header .logo {
+		margin: 0 auto;
+	}
+	.tovar .references li {
+		background: #FFFFFF;
+		margin-bottom: 6px;
+	}
+	.tovar .references li span {
+		width: auto !important;
+		float: none !important;
+		padding: 0 !important;
+	}
+	.tovar .references li span:first-child {
+		margin-right: 10px;
+	}
+	.tovar .complete-set, .tovar .vibor {
+		padding-left: 0;
+	}
+	.vibor > div > span:first-child {
+		width: 100px;
+	}
+	.tovar .vibor span.hint {
+		margin-left: 80px;
+		margin-top: 10px;
+	}
+	.accessories > .row:first-child div:nth-child(2), .accessories > .row:first-child div:nth-child(3) {
+		border: none;
+	}
+	.accessories .image {
+		height: 130px;
+	}
+	.accessories .name {
+		font-size: 20px;
+	}
+	.accessories .descr {
+		font-size: 18px;
+	}
+	.accessories .price {
+		margin-bottom: 8px;
+	}
+	.accessories > .row:nth-child(2) > div {
+		margin-bottom: 30px;
+	}
+	.zakaz {
+		font-size: 14px;
+	}
+	.zakaz .title-line {
+		font-size: 12px;
+	}
+	.line input[type="checkbox"] + label {
+		background-size: cover;
+		width: 20px;
+		height: 20px;
+	}
+	.line .color {
+		display: block;
+	}
+	.line > div:nth-child(1) > label {
+		margin-right: 0;
+	}
+	.line > div:nth-child(2) div {
+		height: 22px;
+		line-height: 18px;
+		font-size: 16px;
+	}
+	.line > div:nth-child(2) > * {
+		width: 22px;
+	}
+	.line > div:nth-child(2) input {
+		font-size: 14px;
+	}
+	.line > div:nth-child(3) span {
+		font-size: 16px;
+	}
+	.itogo .text {
+		height: 60px;
+		line-height: 58px;
+		font-size: 22px;
+	}
+	.zakaz .sposob {
+		width: 100%;
+	}
+	.online-line input[type="radio"] {
+		display: none;
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-	
+	.online-line input[type="radio"] + label {
+		font-size: 18px;
+	}
 }
 
 /* Custom, iPhone Retina */
